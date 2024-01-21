@@ -4,5 +4,40 @@
 		"name": "Max Effort",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "Dev",
+			"item": [
+				{
+					"name": "Add Products",
+					"id": "d03b065f-12b8-4927-8b94-eb31e28b70c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "dZDpks4Y77yO/Q/ajGWCE1y+xyc3iIG+qlCKD1h7k/g=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ProductList\": [\n        {\n            \"Product_ID\": \"DEMO100001\",\n            \"Product_SKU\": \"DEMO100001\",\n            \"Product_Name\": \"Test Product\",\n            \"Product_Description\": \"Test Product\",\n            \"Product_Category\": \"T-SHIRT\",\n            \"Product_Price\": \"24.00\",\n            \"Product_Length\": \"12.00\",\n            \"Product_Width\": \"12.00\",\n            \"Product_Height\": \"12.00\",\n            \"Product_UnitVolume\": \"1728\",\n            \"Product_UnitWeight\": \"0.28\",\n            \"Product_VolumetricWeight\": \"0.28\",\n            \"Product_Barcode\": \"10757500004\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://38.89.140.3:1278/api/v1/product"
+					},
+					"response": []
+				}
+			],
+			"id": "1f126455-3ad9-48b0-8716-cdb439ba87d5"
+		}
+	]
 }
